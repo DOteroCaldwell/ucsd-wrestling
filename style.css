@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+.splash {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+.splash img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  nav {
+    background-color: #182B49;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  /* navigation bar size */
+  nav ul li a {
+    display: block;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  nav ul li a:visited {
+    color: #FFCD00;
+  }
+

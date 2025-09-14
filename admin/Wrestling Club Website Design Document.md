@@ -1,4 +1,4 @@
-[Github Rep](https://github.com/DOteroCaldwell/ucsd-wrestling)
+[Github Repo](https://github.com/DOteroCaldwell/ucsd-wrestling)
 
 ## Statement of Purpose
 
@@ -17,3 +17,13 @@ Our target audience is tiered as follows:
 
 ## Wireframes
 
+![[wireframes/index_wireframe.png]]
+
+## Design Standards
+
+When possible, we will align our color selection with that of our parent university. Details on UCSD's colors can be found at https://brand.ucsd.edu/visual-brand/color/index.html
+
+Many pictures that the team owns can be found at 
+https://photos.app.goo.gl/qRWxejghJ4Xj1Ly3A
+https://photos.app.goo.gl/iEYh6kw2JW6VyYxk6
+https://photos.app.goo.gl/kbUi6nT4dNeU7p4d9
