@@ -5,6 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>National Collegiate Wrestling Team at UC San Diego - Join</title>
   <link rel="stylesheet" href="../style.css" />
+  <style>
+    .calendar-container {
+      max-width: 100%;
+      overflow: hidden;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    .calendar-container iframe {
+      width: 100%;
+      height: 900px;
+      border: none;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -17,17 +31,17 @@
       </ul>
     </nav>
   </header>
+
   <main>
-    <h1>Join Triton Wrestling</h1>
-    <section class="register">    
-      <h2>Register for Practices</h2>
-      <h3>Fall 2025 Competitive Workout</h3>
-        <p><strong>Monday - Friday; 7am - 9am</strong></p>
-        <p>The main practice for our competative team.</p>
-      <h3>Fall 2025 Wrestling Fundamentals</h3>
-        <p><strong>Monday, Wednesday; 7pm - 9pm</strong></p>
-        <p>Learn the fndamentals of wrestling, or just wrestle without wakng up early. Available to all levels.</p>
-    </section>
+    <h1>Practice & Event Schedule</h1>
+
+    <div class="calendar-container">
+      <iframe 
+        src="https://calendar.google.com/calendar/embed?src=clubwrestling%40ucsd.edu&ctz=America%2FLos_Angeles&mode=WEEK&showTitle=0&showPrint=0&showTabs=0&showCalendars=0&showTz=0"
+        frameborder="0"
+        scrolling="no">
+      </iframe>
+    </div>
   </main>
   <footer class="support-footer">
     <h2>Support the UCSD Wrestling Club</h2>
@@ -43,3 +57,4 @@
   </footer>
 </body>
 </html>
+

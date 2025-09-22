@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #F5F0E6;
   }
   
 .splash {
@@ -16,6 +17,18 @@ body {
     margin: 0 auto;
   }
 
+.bio {
+  display: flex;
+  align-items: flex-start;
+}
+
+.bio img {
+  margin-right: 1.5rem;
+  max-width: 200px;
+  height: auto;
+  display: block;
+}
+
   nav {
     background-color: #182B49;
   }
@@ -26,19 +39,57 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
+    font-size: clamp(1rem, 2vw, 1.5rem);
   }
   
   /* navigation bar size */
   nav ul li a {
     display: block;
-    padding: 1.5rem;
-    font-size: 1.2rem;
-    color: #ffffff;
+    padding: 1rem;
+    -font-size: 1.2rem;
+    font-size: clamp(0.8rem, 2vw, 1.5rem);
+    color: #FFCD00;
     text-decoration: none;
   }
-  
-  nav ul li a:visited {
-    color: #FFCD00;
+
+  h1 {
+    margin: 2rem 2rem 1rem 2rem;
+  }
+
+  h2 {
+    margin: 2rem 2rem 1rem 2rem;
+  }
+
+  h3 {
+    margin: 2rem 2rem 1rem 2rem;
+  }
+
+  p {
+    margin: 2rem 2rem 1rem 2rem;
+  }
+
+  .support-footer {
+    background-color: #222;
+    color: #f1f1f1;
+    text-align: center;
+    padding: clamp(0.rem, 2vw, 1.5rem);
+    margin-top: 3rem;
+  }
+
+  footer h2 {
+    display: block;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    color: #ffffff85;
+    text-decoration: none;
+  }
+
+  footer p {
+    display: block;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    color: #ffffff85;
+    text-decoration: none;
   }
 
   .carousel-container {
@@ -68,3 +119,11 @@ body {
     margin-top: 0;
     padding-top: 10px;
   }
+
+  footer div {
+    display: block;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    color: #ffffff85;
+    text-decoration: none;
+}
