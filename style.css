@@ -120,13 +120,16 @@ footer h2, footer p, footer div {
 
 .slideshow {
   position: relative;
-  max-width: 100%;
+  max-width: 80%; /* Shrink the width by 20% */
   margin: 2rem auto;
   overflow: hidden;
+  /* Remove the fixed height */
 }
 
 .slides img {
   width: 100%;
+  height: auto; /* Allow images to scale naturally */
+  object-fit: cover; /* Crop images to maintain aspect ratio */
   display: none;
 }
 
@@ -152,4 +155,9 @@ footer h2, footer p, footer div {
 
 .slideshow .next {
   right: 10px;
+}
+
+/* Remove slide-buttons styles */
+.slide-buttons {
+  display: none;
 }
