@@ -1,21 +1,30 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #F5F0E6;
-  }
-  
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #F5F0E6;
+}
+
+.splash, .bio img, nav ul, nav ul li a, h1, h2, h3, p, .support-footer, footer h2, footer p, footer div, .footer-buttons, .footer-btn, .footer-credit {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .splash {
-    text-align: center;
-    padding: 20px;
-    background-color: #f0f0f0;
-  }
-  
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.splash img, .bio img {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+}
+
 .splash img {
-    max-width: 50%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
+  max-width: 50%;
+}
 
 .bio {
   display: flex;
@@ -25,94 +34,122 @@ body {
 .bio img {
   margin-right: 1.5rem;
   max-width: 200px;
-  height: auto;
+}
+
+nav {
+  background-color: #182B49;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+nav ul li a {
+  display: block;
+  padding: 1rem;
+  font-size: clamp(0.8rem, 2vw, 1.5rem);
+  color: #FFCD00;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+  background-color: #FFCD00;
+  color: #182B49;
+  border-radius: 5px;
+}
+
+nav ul li a.active {
+  font-weight: bold;
+}
+
+h1, h2, h3, p {
+  margin: 2rem 2rem 1rem;
+}
+
+.support-footer {
+  background-color: #222;
+  color: #f1f1f1;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+footer h2, footer p, footer div {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  color: #ffffff85;
+}
+
+.footer-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.footer-btn {
+  color: #FFCD00;
+  background-color: #333;
+}
+
+.footer-btn.donate {
+  background-color: #FFCD00;
+  color: #222;
+}
+
+.footer-credit {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #ffffff60;
+}
+
+.slideshow {
+  position: relative;
+  max-width: 100%;
+  margin: 2rem auto;
+  overflow: hidden;
+}
+
+.slides img {
+  width: 100%;
+  display: none;
+}
+
+.slides img.active {
   display: block;
 }
 
-  nav {
-    background-color: #182B49;
-  }
-  
-  nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-size: clamp(1rem, 2vw, 1.5rem);
-  }
-  
-  nav ul li a {
-    display: block;
-    padding: 1rem;
-    font-size: clamp(0.8rem, 2vw, 1.5rem);
-    color: #FFCD00;
-    text-decoration: none;
-  }
+.slideshow button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  z-index: 10;
+}
 
-  h1 {
-    margin: 2rem 2rem 1rem 2rem;
-  }
+.slideshow .prev {
+  left: 10px;
+}
 
-  h2 {
-    margin: 2rem 2rem 1rem 2rem;
-  }
-
-  h3 {
-    margin: 2rem 2rem 1rem 2rem;
-  }
-
-  p {
-    margin: 2rem 2rem 1rem 2rem;
-  }
-
-  .support-footer {
-    background-color: #222;
-    color: #f1f1f1;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-    font-size: 0.9rem;
-  }
-
-  footer h2 {
-    margin: 0.5rem 0;
-    font-size: 1rem;
-    color: #ffffff85;
-  }
-
-  footer p {
-    margin: 0.5rem 0;
-    font-size: 0.9rem;
-    color: #ffffff85;
-  }
-
-  footer div {
-    margin: 0.5rem 0;
-  }
-
-  .footer-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  .footer-btn {
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-    text-decoration: none;
-    color: #FFCD00;
-    background-color: #333;
-    border-radius: 5px;
-  }
-
-  .footer-btn.donate {
-    background-color: #FFCD00;
-    color: #222;
-  }
-
-  .footer-credit {
-    margin-top: 0.5rem;
-    font-size: 0.8rem;
-    color: #ffffff60;
-  }
+.slideshow .next {
+  right: 10px;
+}
