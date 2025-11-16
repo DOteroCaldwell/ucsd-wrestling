@@ -42,11 +42,9 @@ body {
     font-size: clamp(1rem, 2vw, 1.5rem);
   }
   
-  /* navigation bar size */
   nav ul li a {
     display: block;
     padding: 1rem;
-    -font-size: 1.2rem;
     font-size: clamp(0.8rem, 2vw, 1.5rem);
     color: #FFCD00;
     text-decoration: none;
@@ -72,30 +70,49 @@ body {
     background-color: #222;
     color: #f1f1f1;
     text-align: center;
-    padding: clamp(0.rem, 2vw, 1.5rem);
-    margin-top: 3rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
   }
 
   footer h2 {
-    display: block;
-    padding: 1.5rem;
-    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    font-size: 1rem;
     color: #ffffff85;
-    text-decoration: none;
   }
 
   footer p {
-    display: block;
-    padding: 1.5rem;
-    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
     color: #ffffff85;
-    text-decoration: none;
   }
 
   footer div {
-    display: block;
-    padding: 1.5rem;
-    font-size: 1.2rem;
-    color: #ffffff85;
+    margin: 0.5rem 0;
+  }
+
+  .footer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .footer-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
     text-decoration: none;
+    color: #FFCD00;
+    background-color: #333;
+    border-radius: 5px;
+  }
+
+  .footer-btn.donate {
+    background-color: #FFCD00;
+    color: #222;
+  }
+
+  .footer-credit {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: #ffffff60;
   }
