@@ -92,10 +92,38 @@ body {
     text-decoration: none;
   }
 
+  .carousel-container {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+    width: 100%;
+  }
+  
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .slide img {
+    width: 100%;
+    display: block;
+  }
+
+  .about-section {
+    margin-top: 0;
+    padding-top: 10px;
+  }
+
   footer div {
     display: block;
     padding: 1.5rem;
     font-size: 1.2rem;
     color: #ffffff85;
     text-decoration: none;
-  }
+}
