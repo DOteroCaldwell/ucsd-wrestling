@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>About - NCWA Team at UC San Diego</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ucsd: {
+                            navy: '#182B49',
+                            yellow: '#FFCD00',
+                            blue: '#00629B',
+                            gold: '#C69214'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Hide scrollbar for cleaner look */
+        ::-webkit-scrollbar { width: 0px; background: transparent; }
+        
+        /* Safe area padding for mobile bottom nav on newer iPhones */
+        .pb-safe {
+            padding-bottom: env(safe-area-inset-bottom);
+        }
+        
+        /* Instagram Embed Responsiveness */
+        .instagram-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .instagram-media {
+            min-width: unset !important;
+            width: 100% !important;
+            max-width: 500px !important;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+            border-radius: 0.75rem !important;
+            border: 1px solid #e5e7eb !important;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-gray-50 pb-[80px] md:pb-0">
+
+    <!-- Desktop Navigation Bar -->
+    <nav class="hidden md:block sticky top-0 w-full z-50 bg-ucsd-navy/95 backdrop-blur-md border-b-4 border-ucsd-yellow transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0 flex items-center space-x-3 group">
+                    <div class="w-10 h-10 flex items-center justify-center text-ucsd-navy group-hover:scale-110 transition-transform">
+                      <img src="media/Trident_Gold.svg">
+                    </div>
+                    <div>
+                        <h1 class="text-white font-bold text-xl tracking-wide uppercase group-hover:text-ucsd-yellow transition-colors">Club Wrestling at UC San Diego</h1>
+                    </div>
+                </a>
+                
+                <!-- Desktop Menu Links -->
+                <div class="flex items-baseline space-x-8">
+                    <!-- Active State for About -->
+                    <a href="about.html" class="text-ucsd-yellow px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                    <a href="schedule.html" class="text-gray-300 hover:text-ucsd-yellow px-3 py-2 rounded-md text-sm font-medium transition-colors">Schedule</a>
+                    <a href="join.html" class="text-gray-300 hover:text-ucsd-yellow px-3 py-2 rounded-md text-sm font-medium transition-colors">Join</a>
+                    <a href="connect.html" class="text-gray-300 hover:text-ucsd-yellow px-3 py-2 rounded-md text-sm font-medium transition-colors">Connect</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Bottom Navigation Bar -->
+    <nav class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-ucsd-navy border-t border-white/10 shadow-[0_-4px_20px_rgba(0,0,0,0.3)] pb-safe">
+        <div class="grid grid-cols-5 h-16 items-center justify-items-center">
+            <a href="index.html" class="flex flex-col items-center justify-center w-full h-full text-gray-400 hover:text-white transition-colors">
+                <i data-lucide="home" class="w-6 h-6 mb-1"></i>
+                <span class="text-[10px] font-medium uppercase tracking-wider">Home</span>
+            </a>
+            
+            <a href="about.html" class="flex flex-col items-center justify-center w-full h-full text-gray-400 hover:text-white transition-colors">
+                <i data-lucide="info" class="w-6 h-6 mb-1"></i>
+                <span class="text-[10px] font-medium uppercase tracking-wider">About</span>
+            </a>
+            
+            <a href="schedule.html" class="flex flex-col items-center justify-center w-full h-full text-gray-400 hover:text-white transition-colors">
+                <i data-lucide="calendar" class="w-6 h-6 mb-1"></i>
+                <span class="text-[10px] font-medium uppercase tracking-wider">Times</span>
+            </a>
+            
+            <a href="join.html" class="flex flex-col items-center justify-center w-full h-full text-gray-400 hover:text-white transition-colors">
+                <i data-lucide="user-plus" class="w-6 h-6 mb-1"></i>
+                <span class="text-[10px] font-medium uppercase tracking-wider">Join</span>
+            </a>
+            
+            <!-- Active State for Connect -->
+            <a href="connect.html" class="flex flex-col items-center justify-center w-full h-full text-ucsd-yellow">
+                <i data-lucide="users" class="w-6 h-6 mb-1"></i>
+                <span class="text-[10px] font-medium uppercase tracking-wider">Connect</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="bg-ucsd-navy text-white pt-10 pb-20 px-4 sm:px-6 lg:px-8 relative">
+        <div class="relative max-w-4xl mx-auto text-center">
+            <h1 class="text-3xl md:text-5xl font-black mb-2 uppercase tracking-tight">About Us</h1>
+            <p class="text-base md:text-lg text-blue-100 font-light max-w-2xl mx-auto">
+                Our history, mission, and team leadership.
+            </p>
+        </div>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center px-4 sm:px-6 lg:px-8 -mt-12 relative z-10 pb-12">
+        <div class="bg-white rounded-xl shadow-lg p-12 max-w-2xl w-full text-center border-t-4 border-ucsd-yellow">
+            <div class="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6 text-ucsd-navy">
+                <i data-lucide="hammer" class="w-10 h-10"></i>
+            </div>
+            
+            <h2 class="text-2xl font-bold text-ucsd-navy mb-4">Under Construction</h2>
+            <p class="text-gray-600 mb-8 leading-relaxed">
+                We're currently wrestling with the code to bring you our full history and team roster. Check back soon to learn more about the Triton Wrestling legacy.
+            </p>
+            
+            <a href="index.html" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-bold rounded-md text-white bg-ucsd-navy hover:bg-ucsd-blue transition-colors">
+                <i data-lucide="arrow-left" class="w-4 h-4 mr-2"></i>
+                Back to Home
+            </a>
+        </div>
+    </main>
+
+    <footer class="bg-gray-50 border-t border-gray-200 text-gray-500 py-8 mt-8 mb-[60px] md:mb-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-xs">© 2026 Diego Otero-Caldwell.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
